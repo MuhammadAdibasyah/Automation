@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Chrome
-        uses : browser-actions/setup-chrome@v1.4.0
+        uses : browser-actions/setup-chrome@v1.3.0
         with :
           chrome-version : latest
 
