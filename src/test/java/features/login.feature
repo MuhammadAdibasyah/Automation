@@ -1,6 +1,7 @@
+@web
 Feature: login
 
-  @web
+
   Scenario: login with valid username and valid password
     Given user on login page
     When user fill username with "standard_user"
@@ -8,7 +9,6 @@ Feature: login
     And user click login button
     Then user success to login and on home page
 
-  @api
   Scenario: login with valid username and invalid password
     Given user on login page
     When user fill username with "standard_user"
