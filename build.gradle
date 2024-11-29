@@ -40,7 +40,6 @@ configurations {
     }
 }
 
-def tags = (findProperty('tags')==null) ? 'not @exclude' : findProperty('tags') +'and not @exclude'
 
 task cucumber(){
     description("Running Cucumber Test")
