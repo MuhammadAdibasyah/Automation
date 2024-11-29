@@ -32,9 +32,7 @@ jobs:
           chrome-version : latest
 
       - name : Build with Gradle
-        run :
-          chmod +x gradlew
-          ./gradlew build
+        run : chmod +x gradlew
 
       - name : Run Test
         run : ./gradlew clean test
