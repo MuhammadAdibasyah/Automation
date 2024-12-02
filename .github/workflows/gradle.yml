@@ -32,7 +32,9 @@ jobs:
           chrome-version : latest
 
       - name : Build with Gradle
-        run : chmod +x gradlew
+        run :
+          chmod +x gradlew
+          ./gradlew build
 
       - name : Run Test
         run : ./gradlew clean test
@@ -42,5 +44,5 @@ jobs:
         if : always ()
         with :
           name : cucumber
-          path : reports
+          path : reports/test-report.html
 
