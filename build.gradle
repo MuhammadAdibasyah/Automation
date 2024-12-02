@@ -50,7 +50,7 @@ task cucumber(){
             args = [
                     '--plugin', 'pretty',
                     '--plugin', 'html:reports/cucumber.html',
-                    '--glue', 'stepDef',
+                    '--glue', 'stepDefenition',
                     '--tags', "${tags}",
                     'src/test/java/features'
             ]
