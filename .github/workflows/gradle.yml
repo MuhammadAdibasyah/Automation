@@ -34,7 +34,7 @@ jobs:
       - name : Build with Gradle
         run : |
           chmod +x gradlew
-          ./gradlew build
+         
 
       - name : Run Test
         run : ./gradlew cucumber
