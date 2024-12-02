@@ -32,17 +32,15 @@ jobs:
           chrome-version : latest
 
       - name : Build with Gradle
-        run : |
-          chmod +x gradlew
-         
+        run : chmod +x gradlew
 
       - name : Run Test
-        run : ./gradlew cucumber
+        run : ./gradlew cucumber -Ptags="@Web"
 
       - name : Archive test result
         uses : actions/upload-artifact@v4.3.0
         if : always ()
         with :
           name : cucumber
-          path : reports/cucumber.html
+          path : reports/test-report.html
 
