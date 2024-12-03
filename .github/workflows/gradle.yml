@@ -27,7 +27,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Chrome with extra capabilities
-        uses : browser-actions/setup-chrome@v1.4.0
+        uses : browser-actions/setup-chrome@v1.3.0
         with :
           chrome-version : '131.0.6778.86'
 
