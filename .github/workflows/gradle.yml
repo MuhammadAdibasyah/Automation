@@ -29,7 +29,7 @@ jobs:
       - name: Setup Chrome with extra capabilities
         uses : browser-actions/setup-chrome@v1.4.0
         with :
-          chrome-version : latest
+          chrome-version : '131.0.6778.86'
 
       - name : Build with Gradle
         run : chmod +x gradlew
