@@ -34,7 +34,7 @@ jobs:
       - name: Setup Firefox
         uses: browser-actions/setup-firefox@v1.5.2
         with:
-          firefox-version: 133.0
+          firefox-version: latest
 
       - name : Build with Gradle
         run : chmod +x gradlew
