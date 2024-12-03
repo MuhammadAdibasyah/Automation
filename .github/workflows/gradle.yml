@@ -26,10 +26,15 @@ jobs:
           java-version: '22'
           distribution: 'temurin'
 
-      - name: Setup Chrome with extra capabilities
-        uses : browser-actions/setup-chrome@v1.3.0
-        with :
-          chrome-version : latest
+#      - name: Setup Chrome with extra capabilities
+#        uses : browser-actions/setup-chrome@v1.3.0
+#        with :
+#          chrome-version : latest
+
+      - name: Setup Firefox
+        uses: browser-actions/setup-firefox@v1.5.2
+        with:
+          firefox-version: 133.0
 
       - name : Build with Gradle
         run : chmod +x gradlew
